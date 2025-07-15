@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ur5e_golf_pick_place
+    relative_path: urdf/ur5e_robotiq85.urdf.xacro
+  srdf:
+    relative_path: config/ur.srdf
+  package_settings:
+    author_name: sx
+    author_email: sx@gmail.com
+    generated_timestamp: 1752541684
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

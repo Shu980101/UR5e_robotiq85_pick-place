@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypeset="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ur5e_golf_pick_place</name>
+  <version>1.0.0</version>
+  <description>UR5e Golf Ball Pick and Place Task</description>
+  <maintainer email="shu.xiao@students.iaac.net">shu</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>control_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros_pkgs</depend>
+  <depend>gazebo_ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>joint_trajectory_controller</depend>
+  <depend>position_controllers</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>rviz2</depend>
+  <depend>xacro</depend>
+  <depend>ur_description</depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <export>
+    <build_type>ament_python</build_type>
+    <gazebo_ros gazebo_model_path = "/home/shu/ur5e_task/install/robotiq_description/share/"/>
+  </export>
+</package>
